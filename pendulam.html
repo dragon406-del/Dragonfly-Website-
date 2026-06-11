@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+      <meta charset="UTF-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <meta http-equiv="X-UA-Compatible" content="ie=edge">
+      <title>A pendulam with a watch</title>
+      <style type="text/css" media="all">
+        *{
+          padding:0;
+          margin:0;
+          box-sizing: border-box;
+          font-family: san-sarif;
+          font-size: 30px;
+        }
+        .sabka_god_father{
+          display: flex;
+          flex-direction: column;
+          height: 100vh;
+          width: 100vw;
+          background-color:#212124;
+          position: relative;
+        }
+        .stand{
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          background-color: #565252;
+          height: 100px;
+          width: 100vw;
+        }
+        .ball2{
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          height: 100px;
+          width: 100px;
+          border: 2px solid black;
+          border-radius: 50%;
+          background-color: yellow;
+        }
+        .clock1{
+          height: 50px;
+          width: 3px;
+          background-color: black;
+          position: absolute;
+          top: 2px;
+          left: 49vw;
+        }
+        .clock2{
+          height: 5px;
+          width: 40px;
+          background-color: black;
+          position: absolute;
+          top: 47px;
+          left: 49vw;
+        }
+        .pendulam_body{
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          flex-direction: column;
+          transform-origin: top;
+          animation: swing 0.5s ease-in-out infinite alternate;
+          position: absolute;
+          top: 95px;
+          left: 43vw;
+          }
+          .cable  {
+          height: 200px;
+          width: 5px;
+          background-color: #F9FF00;
+          }
+          .ball{
+            background-color: #E1BD28;
+            height: 50px;
+            width: 50px;
+            border-radius: 50%;
+            
+          }
+      
+          @keyframes swing{
+            0%{
+              transform: rotate(43deg);
+              }
+            100%{
+              transform: rotate(-43deg);
+              }
+            }
+            .text{
+              background-color: #363535;
+              color: #FF0000;
+              position: absolute;
+              top: 400px;
+              width: 100vw;
+              
+            }
+      </style>
+    </head>
+    <body>
+      <div class="sabka_god_father">
+        <div class="stand">
+        <div class="ball2"></div>
+        <div class="clock1"></div>
+        <div class="clock2"></div>
+        </div>
+        <div class="pendulam_body">
+          <div class="cable"></div>
+          <div class="ball"></div>
+        </div>
+        <span class="text">
+          <h1><u>MADE BY DRAGONFLY</u></h1>
+          <p>A pendulam with a watch</p>
+        </span>
+      </div>
+    </body>
+</html>

@@ -1,0 +1,263 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Coding Course Website</title>
+
+<style>
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:Arial, sans-serif;
+}
+.watermark {
+    position: fixed;
+    top: 30%;
+    left: 30%;
+    transform: translate(-50%, -50%) rotate(-30deg);
+    font-size: 10px;
+    color: rgba(0, 0, 0, 0.15);
+    pointer-events: none;
+    user-select: none;
+    z-index: -1;
+}
+
+body{
+    
+    background:#f5f5f5;
+}
+.navbar{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    justify-content: space-evenly;
+    gap: 50px;
+    background-color: #29292B;
+    list-style: none;
+    width: 300vw;
+    box-shadow: 0 0 30px 0;
+    color: red;
+}
+.nav32{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+    text-decoration: none;
+    list-style: none;
+
+}
+nav ul {
+    list-style: none;
+}
+
+/* Navbar */
+nav{
+    color:skyblue;
+    padding:15px 50px;
+}
+
+nav h2{
+    display:inline;
+}
+
+/* Hero Section */
+.hero{
+    text-align:center;
+    padding:80px 20px;
+    position: absolute;
+    color: red;
+    top: 5vh;
+    left: 73%;
+}
+
+.hero h1{
+    font-size:45px;
+    margin-bottom:20px;
+}
+
+.hero a{
+    text-decoration:none;
+    background:#007bff;
+    color:black;
+    padding:12px 25px;
+    border-radius:5px;
+}
+
+/* Course Section */
+.courses{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    justify-content: space-between;
+    flex-direction: column;
+    gap: 20px;
+    position: absolute;
+    top: 110vh;
+    left: 36%;
+    width:100vw;
+}
+
+section h2{
+    position: absolute;
+    top: 30vh;
+    left: 45%;
+    width: 50vw;
+}
+
+.course-container{
+    display: flex;
+    
+    gap:30px;
+    position: absolute;
+    top: 50vh;
+    left: -8vw;
+    width: 200vw;
+}
+
+.card{
+    background:white;
+    width:280px;
+    padding:20px;
+    border-radius:10px;
+    text-align:center;
+    box-shadow:0 0 10px rgba(0,0,0,0.1);
+    
+}
+
+.card img{
+    width:100%;
+    height:150px;
+    object-fit:cover;
+    border-radius:5px;
+    display: flex;
+    align-items: center;
+}
+
+.card h3{
+    margin:15px 0;
+    display: flex;
+}
+
+.card a{
+    text-decoration:none;
+    background:#28a745;
+    color:white;
+    padding:10px 20px;
+    border-radius:5px;
+    display: flex;
+}
+
+  .navi{
+    padding:15px;
+    animation:slideDown 1s ease;
+}
+
+nav ul{
+    list-style:none;
+    display:flex;
+    justify-content:center;
+    display: flex;
+    align-items: center;
+}
+
+nav ul li{
+    margin:0 20px;
+    color:#F90000;
+}
+
+nav ul li a{
+    color:#F90000;
+    text-decoration:none;
+    font-size:18px;
+    transition:0.3s;
+    display: flex;
+    align-items: center;
+}
+
+nav ul li a:hover{
+    color:#FF0000;
+    display: flex;
+    
+}
+hr{
+    background-color: black;
+    height: 5px;
+    width: 300vw;
+    position: absolute;
+    top: 130vh;
+    left: 0;
+}
+.logo{
+    color: #00D1F9;
+}
+p{
+    color: blue;
+}
+</style>
+</head>
+<body>
+
+<div class="watermark">EDITED BY DRAGONFLY</div>
+
+
+<!-- Navbar -->
+<header class="navbar">
+    <nav>
+        <h1 class="logo">LOGO</h1>
+    </nav>
+    <nav class="navi">
+        <ul class="nav32">
+            <li><a href="#">Home</a></li>
+            <li><a href="edit.html">About</a></li>
+            <li><a href="service.html">Services</a></li>
+            <li><a href="text.html">Contact</a></li>
+        </ul>
+    </nav>
+</header>
+
+    
+
+
+<!-- Welcome Section -->
+<section class="hero">
+    <h1>Welcome To My Website</h1>
+    <a href="pendulam.html">Get Started</a>
+     
+</section>
+
+<!-- Courses -->
+<p></p>
+<hr 
+<p></p>
+<section class="courses">
+    
+    <h2>All Courses</h2>
+
+    <div class="course-container">
+
+        <div class="card">
+            <img src="https://via.placeholder.com/250x150" alt="">
+            <h3>Basic Coding</h3>
+            <a href="coading.html">Learn More</a>
+        </div>
+
+        <div class="card">
+            <img src="https://via.placeholder.com/250x150" alt="">
+            <h3>Web Devolopment</h3>
+            <a href="web_devplopment.html">Learn More</a>
+        </div>
+
+        <div class="card">
+            <img src="https://via.placeholder.com/250x150" alt="">
+            <h3>Just Python</h3>
+            <a href="python.html">Learn More</a>
+        </div>
+
+    </div>
+</section>
+
+</body>
+</html>
